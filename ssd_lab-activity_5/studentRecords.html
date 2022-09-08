@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title >Student Records</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Student Records</h1>
+    <div>
+        <input placeholder="Roll No." type="text" id="rollno" name="rollno">
+        <input placeholder="Name" type="text" id="name" name="name">
+        <button class="addBtn" type="submit" value="login" onclick="addName()">Add New</button>
+    </div>
+    <br />
+    <div class="record">
+    <table id="tableHeading">
+        <tr>
+            <td>Roll No</td>
+            <td>Name</td>
+        </tr>
+    </table>
+    <table id="recordTable">
+    </table>
+    <br />
+</div>
+<br />
+    <button id="deleteBtn" type="submit" value="delete" onclick="removeName()">Delete last record</button>
+
+
+</body>
+
+</html>
