@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 6</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h3> Team Form</h3>
+            <form id="form">
+                <label for="managerName">Manager Name :</label>
+                <input type="text" id="managerName" name="managerName" required><br/> <br />
+
+                <label for="groupEmail">Group Email :</label><t />
+                <input type="email" id="groupEmail" name="groupEmail" required><br/><br/>
+
+                <label for="serverUsername">Server Username :</label>
+                <input type="text" id="serverUserName" name="serverUsername" 
+                placeholder="Server User Name"
+                onchange="validateUserName()"
+                required><span id="invalidUsername"></span><br/><br/>
+                
+                <label for="serverPassword">Server Password :</label><t />
+                <input type="password" id="serverPassword" name="serverPassword" required><br/><br/>
+                
+                <label for="confirmPassword">Confirm Password :</label><t />
+                <input type="password" id="confirmPassword" name="confirmPassword"
+                onchange="checkPassword()"><span id="invalidPassword"></span><br/><br/>
+                
+
+                <label for="teamLead">Team Lead : </label>
+
+                    <select name="teamLead" id="teamLead">
+                        <option value="option1">Point Break</option>
+                        <option value="option2">Option 1</option>
+                        <option value="option3">Option 2</option>
+                        <option value="option4">Option 3</option>
+                    </select>
+                <br/><br/>
+                    <input type="submit" value="Submit" onsubmit="preventDefault()" >
+              </form>
+    </body>
+</html>
